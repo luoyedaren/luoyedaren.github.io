@@ -2,25 +2,24 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>谢孟媛初级文法讲义</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>谢孟媛初级文法讲义</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
-#write.first-line-indent p { text-indent: 2em; }
-#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
-#write.first-line-indent li { margin-left: 2em; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; padding-bottom: 70px; overflow-x: visible; }
+.first-line-indent #write div, .first-line-indent #write li, .first-line-indent #write p { text-indent: 2em; }
+.first-line-indent #write div :not(p):not(div), .first-line-indent #write div.md-htmlblock-container, .first-line-indent #write p *, .first-line-indent pre { text-indent: 0px; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
+#write > blockquote:first-child, #write > div:first-child, #write > figure:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > ul:first-child { margin-top: 30px; }
 #write li > figure:first-child { margin-top: -20px; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; }
@@ -105,7 +104,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; text-align: cente
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
 .md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner:hover { }
 .md-toc-inner { display: inline-block; cursor: pointer; }
 .md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
 .md-toc-h2 .md-toc-inner { margin-left: 2em; }
@@ -153,8 +152,10 @@ iframe { max-width: 100%; width: 100%; border: none; }
 @font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
 html { font-size: 16px; }
 body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
-#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
 #write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
 a { color: rgb(65, 131, 196); }
 h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
@@ -173,6 +174,12 @@ h6 { font-size: 1em; color: rgb(119, 119, 119); }
 p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
 li > ol, li > ul { margin: 0px; }
 hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
 li p.first { display: inline-block; }
 ul, ol { padding-left: 30px; }
 ul:first-child, ol:first-child { margin-top: 0px; }
@@ -192,6 +199,8 @@ table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
 code { background-color: rgb(243, 244, 244); padding: 0px 4px 2px; }
 .md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
 .md-task-list-item > input { margin-left: -1.3em; }
+@media screen and (min-width: 914px) {
+}
 @media print {
   html { font-size: 13px; }
   table, pre { break-inside: avoid; }
@@ -217,8 +226,6 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 .mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
 .md-lang { color: rgb(180, 101, 77); }
 .html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
-#md-notification .btn { border: 0px; }
-.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
 
 
 
@@ -228,7 +235,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 </style>
 </head>
 <body class='typora-export os-windows' >
-<div  id='write'  class = 'is-node'><h1><a name='header-n184' class='md-header-anchor '></a>谢孟媛初级文法讲义</h1><p><span>						</span></p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n184"><a class="md-toc-inner" href="#header-n184">谢孟媛初级文法讲义</a></span><span class="md-toc-item md-toc-h2" data-ref="n188"><a class="md-toc-inner" href="#header-n188">名词(noun)  单数/复数</a></span></p></div><p><span>			</span><em>谢孟媛老师</em></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n188' class='md-header-anchor '></a>名词(noun)  单数/复数</h2><p> <code>普通名词</code> book pencil  dog  Spaceship 宇宙飞船</p><ul><li>例如： I like dogs.  <em>我喜欢狗</em></li></ul><p> <code>集合名词</code> class family audience</p><ul><li><p>例如 :</p><ol start='' ><li>My family is large . <em>我家是大家庭</em></li><li>My family are all early riser<sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup>  . <em>我家人都起的很早</em></li><li></li></ol></li></ul><p> <code>专用名词</code>  Bob Smith  April London</p><blockquote><p>专用名词前不能加冠词、后面不加s 下面的专用名词需要加冠词</p></blockquote><p>例如：The united states 美国 The united Nations 联合国 <sup class='md-footnote'><a href='#dfref-footnote-2' name='ref-footnote-2'>2</a></sup></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><div class='footnotes-area'  ><hr/>
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>谢孟媛初级文法讲义</h1><p><span>									</span><em>谢孟媛老师</em></p><p>&nbsp;</p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#header-n0">谢孟媛初级文法讲义</a></span><span class="md-toc-item md-toc-h2" data-ref="n6"><a class="md-toc-inner" href="#header-n6">noun 名词</a></span><span class="md-toc-item md-toc-h3" data-ref="n9"><a class="md-toc-inner" href="#header-n9">I. 名词种类</a></span><span class="md-toc-item md-toc-h3" data-ref="n47"><a class="md-toc-inner" href="#header-n47">II.名词的数</a></span><span class="md-toc-item md-toc-h3" data-ref="n50"><a class="md-toc-inner" href="#header-n50">III. 代替用法</a></span></p></div><p>&nbsp;</p><h2><a name='header-n6' class='md-header-anchor '></a>noun 名词</h2><p>名词的功用： 当主语，补语，受词</p><p>&nbsp;</p><h3><a name='header-n9' class='md-header-anchor '></a>I. 名词种类</h3><p>🅰️ <code>普通名词</code> book pencil  dog  Spaceship 宇宙飞船  </p><ul><li>例如： I like dogs.  <em>我喜欢狗</em></li></ul><p>🅱️ <code>集合名词</code> class family audience</p><ul><li><p>例如 :</p><ol start='' ><li>My family is large . <em>我家是大家庭</em></li><li>My family are all early riser<sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup>  . <em>我家人都起的很早</em></li></ol></li></ul><p><code>专用名词</code>  Bob Smith  April London</p><blockquote><p>专用名词前不能加冠词、后面不加s 下面的专用名词需要加冠词</p></blockquote><p>例如：The united states 美国 The united Nations 联合国 <sup class='md-footnote'><a href='#dfref-footnote-2' name='ref-footnote-2'>2</a></sup></p><p>&nbsp;</p><p><code>物质名词</code> glass glasses wood paper newspaper  butter fruit meat  sugar air gas water</p><blockquote><p>物质 + 容器(度量衡) + of + 物质名词</p></blockquote><p>例如：</p><ul><li>a loaf of bread 一片面包 </li><li>Loaves of bread 很多面包</li><li>a cop of coffee </li><li>a sheet of paper </li><li>a spoonful of sugar </li><li>a kind of fish 一种鱼</li></ul><p><code>抽象名词</code> beauty(美丽) honesty(诚实) love live life patience happy  happiness  music </p><p>&nbsp;</p><h3><a name='header-n47' class='md-header-anchor '></a>II.名词的数</h3><p>&nbsp;</p><p>&nbsp;</p><h3><a name='header-n50' class='md-header-anchor '></a>III. 代替用法</h3><p>代替叙述过的词，代替单数名词用 <code>that</code>  代替复数名词 <code>those</code> </p><blockquote><p>需要修饰语修饰的名词才可以用代替用法</p></blockquote><blockquote><p>避免重复表述，不重复，重点表达放前面</p></blockquote><ul><li>The weather in Taipei is cooler than that (the wether) in Kaosiung</li><li>Her interests are different from those (the interests) of her childhood.</li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><div class='footnotes-area'  ><hr/>
 <div class='footnote-line'><span class='md-fn-count'>1</span> 早起的人<a name='dfref-footnote-1' href='#ref-footnote-1' title='回到文档' class='reversefootnote' >↩</a></div>
 <div class='footnote-line'><span class='md-fn-count'>2</span> 多个州组成的国家需要+ the<a name='dfref-footnote-2' href='#ref-footnote-2' title='回到文档' class='reversefootnote' >↩</a></div></div></div>
 </body>
