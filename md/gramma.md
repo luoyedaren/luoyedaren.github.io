@@ -12,7 +12,7 @@
 
 #### present tense
 
-used to talk about the future or past.
+**used to talk about the future or past.**
 
 | tense                     | example             |
 | :------------------------ | ------------------- |
@@ -23,11 +23,15 @@ used to talk about the future or past.
 
 例句：
 
-- Philip is having problems with his car again. (not use prensent simple )
+- _Philip is having problems with his car again. (not use prensent simple:  ~~has~~ )_
+- _My parents have lived in Spain for the last 15 years.(not use present perfect continous : ~~haven been living~~)_
 
 
 
+**used to talk about past**
 
+1. telling a story:
+2. when we are summaring something we have heard ,read or seen
 
 
 
