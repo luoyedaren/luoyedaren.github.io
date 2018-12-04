@@ -2,6 +2,41 @@
 
 
 
+[TOC]
+
+
+
+### verb
+
+
+
+#### present tense
+
+used to talk about the future or past.
+
+| tense                     | example             |
+| :------------------------ | ------------------- |
+| Present simple            | I work              |
+| Prensent continous        | I am working        |
+| Prensent perfect          | I have worked       |
+| Present perfect continous | I have been working |
+
+例句：
+
+- Philip is having problems with his car again. (not use prensent simple )
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### adjectives & prepositions
 
 形容词+介系词
