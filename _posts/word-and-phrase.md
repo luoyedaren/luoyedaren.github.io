@@ -1,3 +1,8 @@
+---
+layout: post
+title:  thoughts
+---
+
 # word and phrase
 
 

@@ -1,3 +1,9 @@
+---
+layout: page
+title: tech-words
+---
+this is tech-words shows
+
 loosely coupled 松耦合
 
 `CI` constructor injection 构造器注入
@@ -17,6 +23,12 @@ maintenance problem 维护问题
 hierarchy 层级
 
 diagram 图表
+
+Externalizing configuration 外化的配置
+
+service discovery 服务发现
+
+microservice 微服务
 
 
 

@@ -1,3 +1,8 @@
+---
+layout: post
+title: 锻炼
+---
+
 # 锻炼
 
 

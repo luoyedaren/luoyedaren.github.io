@@ -1,3 +1,8 @@
+---
+layout: post
+title: thoughts
+---
+
 # 				励志电影感悟
 
 ​										感谢 youtube@牛叔
