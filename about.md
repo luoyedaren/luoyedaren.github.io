@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-About you!
+About me !
 
 ### More Information
 
@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[455191843@qq.com](mailto:455191843@qq.com)
+[455191843@qq.com] (mailto:455191843@qq.com)
